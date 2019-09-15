@@ -39,8 +39,10 @@ node{
 		}
 		
 		
-		
-		def imagePrune(containerName)
+	
+}
+
+	def imagePrune(containerName)
 		{
 			try
 			{
@@ -54,5 +56,3 @@ node{
 			
 		}
 		
-	
-	}
