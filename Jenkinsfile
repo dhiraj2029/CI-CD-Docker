@@ -68,6 +68,7 @@ node{
 			{
 				sh "docker image prune -f"
 				sh "docker stop $containerName"
+				sh "docker rm $containerName"
 			}
 			
 			catch(error)
