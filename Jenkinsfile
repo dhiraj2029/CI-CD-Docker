@@ -11,9 +11,9 @@ node{
 		   env.PATH= "${dockerHome}/bin:${mavenHome}/bin:${env.PATH}"
 		}
 		
-		stage('chekout')
+		stage('checkout')
 		{
-		    chekout scm
+		    checkout scm
 		}
 		
 		stage('Build')
@@ -39,10 +39,14 @@ node{
 		}
 		
 		
-	
-}
+		
 
-	def imagePrune(containerName)
+		
+	
+	}
+	
+	
+	    def imagePrune(containerName)
 		{
 			try
 			{
@@ -55,4 +59,3 @@ node{
 			}
 			
 		}
-		
